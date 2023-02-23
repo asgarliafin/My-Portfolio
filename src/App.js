@@ -1,13 +1,15 @@
 import { Footer, Main, Navbar } from "laylouts";
 import Router from "routes";
+import 'assets/scss/style.scss';
+
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
       <Main>
-        <Router/>
+        <Router />
       </Main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

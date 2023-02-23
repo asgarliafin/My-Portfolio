@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './sectionTitle.scss';
 
 const SectionTitle = () => {
   return (
-    <div>SectionTitle</div>
+    <div id='sectioTitle'>SectionTitle</div>
   )
 }
 
-export default SectionTitle
+export default SectionTitle;

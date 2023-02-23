@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectsData from 'data/projects.json';
+import { ProjectCard , SectionTitle} from 'components';
 import './projects.scss';
-import {ProjectCard , SectionTitle} from 'components';
 const Projects = () => {
   return (
     <div id='projects'>

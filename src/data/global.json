@@ -1,0 +1,58 @@
+[
+    {
+        "columns": [
+          {
+            "title": "Pages",
+            "links": [
+              {
+                "name": "Home",
+                "link": "/",
+                "leavesWebsite": false
+              },
+              {
+                "name": "Projects",
+                "link": "/projects",
+                "leavesWebsite": false
+              },
+              {
+                "name": "Designs",
+                "link": "/designs",
+                "leavesWebsite": false
+              }
+            ]
+          },
+          {
+            "title": "Social",
+            "links": [
+              {
+                "name": "GitHub",
+                "link": "https://github.com/braydentw",
+                "icon": "/static/icons/github-f.svg",
+                "leavesWebsite": true
+              },
+              {
+                "name": "LinkedIn",
+                "link": "https://www.linkedin.com/in/braydentw/",
+                "icon": "/static/icons/linkedin-f.svg"
+              },
+              {
+                "name": "Dribbble",
+                "link": "https://dribbble.com/braydentw",
+                "icon": "/static/icons/dribbble-f.svg"
+                             },
+              {
+                "name": "IndieHackers",
+                "link": "https://indiehackers.com/braydentw",
+                "icon": "/static/icons/indiehackers-f.svg"
+              },
+              {
+                "name": "Email",
+                "link": "mailto:contact@braydentw.io",
+                "icon": "/static/icons/mail-f.svg",
+                "leavesWebsite": true
+              }
+            ]
+          }
+        ]
+      }
+]

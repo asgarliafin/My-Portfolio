@@ -3,14 +3,17 @@ import {Home, Projects, Resume} from 'pages';
 export default [
     {
         component: <Home />,
-        path: "/"
+        path: "/",
+        title : "Home"
     },
     {
         component: <Projects />,
-        path: "/projects"
+        path: "/projects",
+        title : "Projects"
     },
     {
         component: <Resume />,
-        path: "/resume"
+        path: "/resume",
+        title : "Resume"
     }
 ]

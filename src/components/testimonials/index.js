@@ -1,16 +1,20 @@
 import React from 'react'
-import {SectionTitle} from 'components';
+import { SectionTitle } from 'components';
 import testimonialsData from 'data/testimonials.json'
+import { Container } from 'react-bootstrap';
 
 const Testimonials = () => {
   return (
     <div>
-      <SectionTitle/>
-      {testimonialsData.map(elm =>{
-        return <div className='testimonialsCard'>
-          Testimonials Card
-        </div>
-      })}
+      <Container>
+        <SectionTitle />
+        {testimonialsData.map((elm, i) => (
+          <div className='testimonialsCard' key={i}>
+            Testimonials Card
+          </div>
+        ))}
+
+      </Container>
     </div>
   )
 }

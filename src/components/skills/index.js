@@ -1,8 +1,13 @@
 import React from 'react'
+import { Container } from 'react-bootstrap';
 
 const Skills = () => {
   return (
-    <div>Skills</div>
+    <div>
+      <Container>
+        Skills
+      </Container>
+    </div>
   )
 }
 

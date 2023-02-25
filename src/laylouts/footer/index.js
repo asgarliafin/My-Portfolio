@@ -1,9 +1,14 @@
 import React from 'react';
-// import './footer.scss';
+import { Container } from 'react-bootstrap';
+import './footer.scss';
 
 const Footer = () => {
   return (
-    <footer id='footer'>Footer</footer>
+    <footer id='footer'>
+      <Container>
+        Footer
+      </Container>
+    </footer>
   )
 }
 

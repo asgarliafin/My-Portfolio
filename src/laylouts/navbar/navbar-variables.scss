@@ -1,0 +1,18 @@
+// Navbar Variables
+
+// Navbar Brand Lg
+$navbar-brand-gap: .125rem;
+$navbar-brand-img-transition: all cubic-bezier(.4, 0, .2, 1) .5s;
+$navbar-brand-img-scale-hover: .75;
+$navbar-brand-img-rotate-hover: rotate(360deg);
+$navbar-brand-name-gap: .3125rem;
+$navbar-brand-letter-weight: 900;
+$navbar-brand-letter-size: 1.25rem;
+$navbar-brand-letter-transition: all cubic-bezier(.4, 0, .2, 1) .2s;
+$navbar-brand-letter-color-rgb-hover: rgb(0, 199, 255);
+$navbar-brand-letter-marginTop-hover: -.5rem;
+
+// Navbar Nav Lg
+$navbar-nav-gap: 2.5rem;
+$navbar-nav-link-opacity: .4;
+$navbar-nav-link-active-opacity: 1;

@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Children } from 'react';
+import { Container } from 'react-bootstrap';
 import './main.scss';
 
-const Main = (props) => {
+const Main = ({children}) => {
   return (
-    <main id='main'>{props.children}</main>
+    <main id='main'>{children}</main>
   )
 }
 

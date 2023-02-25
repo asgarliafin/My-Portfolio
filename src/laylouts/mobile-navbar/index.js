@@ -28,8 +28,8 @@ const MobileNavbar = () => {
           </Link>
           <div className="burger-menu">
             <Button onClick={() => setMenu(prev => !prev)} className='burger-icon'>
-              <VscChromeClose className={menu ? "active" : null} />
-              <AiOutlineMenu className={!menu ? "active" : null} />
+              <VscChromeClose className={!menu ? "active" : null} />
+              <AiOutlineMenu className={menu ? "active" : null} />
             </Button>
           </div>
         </div>

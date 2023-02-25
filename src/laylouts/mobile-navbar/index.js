@@ -33,7 +33,7 @@ const MobileNavbar = () => {
             </Button>
           </div>
         </div>
-        <ListGroup className={`navbar-nav d-flex flex-column menu ${menu ? "active" : null}`}>
+        <ListGroup className={`navbar-nav d-flex flex-column menu ${!menu ? "active" : null}`}>
           {routesData.map(({ path, title }) => (
             <ListGroup.Item key={title}>
               <Link to={path} className={pathname === path ? "active nav-link" : "nav-link"}>{title}</Link>

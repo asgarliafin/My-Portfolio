@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Button, Container, Image, ListGroup } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai';
@@ -14,17 +14,11 @@ const MobileNavbar = () => {
 
   const [menu, setMenu] = useState(true);
 
-  useEffect(()=>setMenu(true),[])
-
-  function handleChangePath(){
-    setMenu(true)
-  }
-
   return (
     <nav id='mobile-navbar'>
       <Container>
         <div className='d-flex justify-content-between align-items-center'>
-          <Link to={""} className="navbar-brand d-flex align-items-center" onClick={handleChangePath}>
+          <Link to={""} className="navbar-brand d-flex align-items-center" onClick={() => setMenu(true)}>
             <Image src={"images/logos/logo_no_text.svg"} width={"60"} />
             <div className='name d-flex'>
               {name.split(" ").map((word, i) => <span className='word d-flex' key={i}>{word.split("")
@@ -41,7 +35,7 @@ const MobileNavbar = () => {
         <ListGroup className={`navbar-nav d-flex flex-column menu ${!menu ? "active" : null}`}>
           {routesData.map(({ path, title }) => (
             <ListGroup.Item key={title}>
-              <Link to={path} className={pathname === path ? "active nav-link" : "nav-link"} onClick={handleChangePath}>{title}</Link>
+              <Link to={path} className={pathname === path ? "active nav-link" : "nav-link"} onClick={() => setMenu(true)}>{title}</Link>
             </ListGroup.Item>
           ))}
         </ListGroup>

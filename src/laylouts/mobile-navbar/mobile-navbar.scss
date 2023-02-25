@@ -22,25 +22,25 @@
     .burger-menu {
 
         .burger-icon {
-            width: 20px;
-            height: 20px;
+            width: $mobile-navbar-brand-letter-size;
+            height: $mobile-navbar-brand-letter-size;
             font-size: $mobile-navbar-burger-icon-size;
             color: $mobile-navbar-burger-icon-color;
             position: relative;
 
             svg {
-                opacity: 0;
-                transform: scale(0);
+                opacity: $mobile-navbar-burger-icon-svg-opacity;
+                transform: $mobile-navbar-burger-icon-svg-scale;
                 position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
-                transition: opacity .3s ease, transform .3s ease;
+                transition: $mobile-navbar-burger-icon-svg-transition;
 
                 &.active {
-                    opacity: 1;
-                    transform: scale(1);
+                    opacity: $mobile-navbar-burger-icon-svg-hover-opacity;
+                    transform: $mobile-navbar-burger-icon-svg-hover-scale;
                 }
             }
 
@@ -48,29 +48,29 @@
     }
 
     .menu {
-        padding-top: 40px;
         position: absolute;
-        background: rgb(0, 10, 31);
-        width: 100%;
-        height: 100vh;
-        z-index: 100;
-        opacity: 0;
         left: 0;
-        transition: opacity .3s ease, transform .3s ease;
-        row-gap: 24px;
+        padding-top: $mobile-navbar-menu-paddingTop;
+        background: $mobile-navbar-menu-background;
+        width: $mobile-navbar-menu-width;
+        height: $mobile-navbar-menu-height;
+        z-index: $mobile-navbar-menu-zIndex;
+        opacity: $mobile-navbar-menu-opacity;
+        transition: $mobile-navbar-menu-transition;
+        row-gap: $mobile-navbar-menu-gap;
 
         &.active {
-            opacity: 1;
+            opacity: $mobile-navbar-menu-active-opacity;
         }
 
         .list-group-item {
-            padding-bottom: 16px;
-            border-bottom: 1px solid rgb(75, 85, 99);
+            padding-bottom: $mobile-navbar-menu-list-group-item-paddingBottom;
+            border-bottom: $mobile-navbar-menu-list-group-item-borderBottom;
 
-            a {
-                font-weight: 600;
-                font-size: 14px;
-                color: rgb(243, 244, 246);
+            .nav-link {
+                font-weight: $mobile-navbar-menu-link-fontWeight;
+                font-size: $mobile-navbar-menu-link-fontSize;
+                color: $mobile-navbar-menu-link-color;
             }
         }
     }

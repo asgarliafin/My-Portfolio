@@ -1,4 +1,4 @@
-// Mobile Navbar Brand Lg
+// Mobile Navbar Brand & Burger Icon
 
 $mobile-navbar-paddingBottom: 1.53846rem;
 $mobile-navbar-brand-name-gap: .3rem;
@@ -6,8 +6,27 @@ $mobile-navbar-brand-letter-weight: 500;
 $mobile-navbar-brand-letter-size: 1.2rem;
 $mobile-navbar-burger-icon-size : 1.53846rem;
 $mobile-navbar-burger-icon-color : #FFFFFF;
+$mobile-navbar-burger-icon-height : #FFFFFF;
+$mobile-navbar-burger-icon-svg-opacity : 0;
+$mobile-navbar-burger-icon-svg-scale: scale(0);
+$mobile-navbar-burger-icon-svg-transition: opacity .3s ease, transform .3s ease;
+$mobile-navbar-burger-icon-svg-hover-opacity: 1;
+$mobile-navbar-burger-icon-svg-hover-scale: scale(1);
 
-// Mobile Navbar Nav Lg
-$mobile-navbar-nav-gap: 2.5rem;
-$mobile-navbar-nav-link-opacity: .4;
-$mobile-navbar-nav-link-active-opacity: 1;
+
+// Mobile Navbar Nav Link
+$mobile-navbar-menu-paddingTop: 3.07692rem;
+$mobile-navbar-menu-background: rgb(0, 10, 31);
+$mobile-navbar-menu-width: 100%;
+$mobile-navbar-menu-height : 100vh;
+$mobile-navbar-menu-zIndex : 100;
+$mobile-navbar-menu-opacity : 0;
+$mobile-navbar-menu-transition : opacity .3s ease,
+transform .3s ease;
+$mobile-navbar-menu-gap: 24px;
+$mobile-navbar-menu-active-opacity : 1;
+$mobile-navbar-menu-list-group-item-paddingBottom : 1.84615rem;
+$mobile-navbar-menu-list-group-item-borderBottom : 1px solid rgb(75, 85, 99);
+$mobile-navbar-menu-link-fontWeight : 600;
+$mobile-navbar-menu-link-fontSize : 1.07692rem;
+$mobile-navbar-menu-link-color : rgb(243, 244, 246);

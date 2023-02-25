@@ -50,7 +50,11 @@ li {
     list-style-type: none;
 }
 
-
+button{
+    outline: none;
+    border: none;
+    background: none;
+}
 
 @media (max-width: 575.98px) {
        html{

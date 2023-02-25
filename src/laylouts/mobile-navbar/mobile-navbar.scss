@@ -1,0 +1,35 @@
+@import "mobile-navbar-variables";
+
+#mobile-navbar {
+    display: none;
+    padding-bottom: $mobile-navbar-paddingBottom;
+
+    .navbar-brand {
+
+        .name {
+            column-gap: $mobile-navbar-brand-name-gap;
+
+            .letter {
+                font-weight: $mobile-navbar-brand-letter-weight;
+                font-size: $mobile-navbar-brand-letter-size;
+            }
+
+        }
+
+    }
+
+    .burger-menu {
+        .burger-icon {
+            font-size: $mobile-navbar-burger-icon-size;
+            color: $mobile-navbar-burger-icon-color;
+        }
+    }
+}
+
+
+
+@media (max-width: 575.98px) {
+    #mobile-navbar {
+        display: block;
+    }
+}

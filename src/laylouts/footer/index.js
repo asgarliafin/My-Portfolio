@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, ListGroup, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import footerData, { logos } from 'data/footerData.js';
+import { FiGithub } from 'react-icons/fi';
 import './footer.scss';
 
 
@@ -46,6 +47,9 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
+        <Link to={"https://github.com/asgarliafin/My-Portfolio"} className='source-code d-flex justify-content-between align-items-center'>
+          <FiGithub size={"1.25rem"} />  View Source Code
+        </Link>
       </Container>
     </footer>
   )

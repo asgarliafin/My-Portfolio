@@ -1,21 +1,49 @@
 #footer {
     padding: 40px 20px;
     margin: 0 -20px;
-    border-top: 1px solid rgb(0, 15 ,46);
+    border-top: 1px solid rgb(0, 15, 46);
 
     .footer-top {
+        border-bottom: 1px solid rgb(25, 39, 66);
+        padding-bottom: 2rem;
+    }
 
-        h4{
+    .ftr-gap {
+        row-gap: 30px;
+
+        &>div {
+            row-gap: .75rem;
+        }
+
+        h4 {
             font-weight: 700;
             text-transform: uppercase;
             color: rgb(123, 137, 168);
         }
 
         .list-group {
+            row-gap: 1rem;
 
             .list-group-item {
-                margin: 1rem 0;
+
+                svg {
+                    margin-right: 8px;
+                }
             }
+
         }
     }
+
+
+}
+
+@media (max-width: 575.98px) {
+    .ftr-gap>div {
+        row-gap: 1rem;
+        
+        .list-group{
+            row-gap: 1rem !important;
+        }
+    }
+
 }

@@ -11,9 +11,9 @@ const Footer = () => {
       <Container>
         <Row className='justify-content-center footer-top'>
           <Col lg={9}>
-            <Row className='ftr-gap'>
+            <Row className='ftr-gap justify-content-between'>
               {footerData.map(({ title, links }) => (
-                <Col lg={4} xs={6} md={6} key={title}  className="d-flex flex-column">
+                <Col lg={3} xs={6} md={6} key={title}  className="d-flex flex-column">
                   <h4>{title}</h4>
                   <ListGroup className='d-flex flex-column'>
                     {

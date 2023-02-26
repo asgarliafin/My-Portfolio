@@ -7,7 +7,7 @@
 
     .navbar-brand {
 
-        img{
+        img {
             width: $mobile-navbar-img-width !important;
         }
 
@@ -51,7 +51,7 @@
 
     .menu {
         position: absolute;
-        left: 0;
+        left: $mobile-navbar-menu-left;
         padding-top: $mobile-navbar-menu-paddingTop;
         background: $mobile-navbar-menu-background;
         width: $mobile-navbar-menu-width;
@@ -62,7 +62,9 @@
         row-gap: $mobile-navbar-menu-gap;
 
         &.active {
+            width: 100%;
             opacity: $mobile-navbar-menu-active-opacity;
+            background: $mobile-navbar-menu-hover-background;
         }
 
         .list-group-item {

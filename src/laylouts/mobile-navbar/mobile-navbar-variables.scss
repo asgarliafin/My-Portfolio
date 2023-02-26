@@ -17,12 +17,15 @@ $mobile-navbar-burger-icon-svg-hover-scale: scale(1);
 
 // Mobile Navbar Nav Link
 $mobile-navbar-menu-paddingTop: 3.07692rem;
-$mobile-navbar-menu-background: rgb(0, 10, 31);
-$mobile-navbar-menu-width: 100%;
+$mobile-navbar-menu-background: none;
+$mobile-navbar-menu-hover-background: rgb(0, 10, 31);
+$mobile-navbar-menu-width: 0;
+$mobile-navbar-menu-hover-width: 100%;
 $mobile-navbar-menu-height : 100vh;
+$mobile-navbar-menu-left: 0;
 $mobile-navbar-menu-zIndex : 100;
 $mobile-navbar-menu-opacity : 0;
-$mobile-navbar-menu-transition : opacity .3s ease,
+$mobile-navbar-menu-transition : all .3s ease,
 transform .3s ease;
 $mobile-navbar-menu-gap: 24px;
 $mobile-navbar-menu-active-opacity : 1;

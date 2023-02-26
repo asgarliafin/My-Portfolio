@@ -60,13 +60,21 @@
         z-index: $mobile-navbar-menu-zIndex;
         opacity: $mobile-navbar-menu-opacity;
         transition: $mobile-navbar-menu-transition;
-        row-gap: $mobile-navbar-menu-gap;
+        padding-left: 20px;
+        padding-right: 20px;
+
+ 
 
         &.active {
             width: 100%;
             opacity: $mobile-navbar-menu-active-opacity;
             background: $mobile-navbar-menu-hover-background;
         }
+
+        .container{
+            row-gap: $mobile-navbar-menu-gap;
+        }
+
 
         .list-group-item {
             padding-bottom: $mobile-navbar-menu-list-group-item-paddingBottom;

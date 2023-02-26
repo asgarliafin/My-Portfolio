@@ -32,14 +32,18 @@ const MobileNavbar = () => {
             </Button>
           </div>
         </div>
-        <ListGroup className={`navbar-nav d-flex flex-column menu ${!menu ? "active" : null}`}>
+      </Container>
+
+      <ListGroup className={`navbar-nav d-flex flex-column menu ${!menu ? "active" : null}`}>
+        <Container className='d-flex flex-column'>
           {routesData.map(({ path, title }) => (
             <ListGroup.Item key={title}>
               <Link to={path} className={pathname === path ? "active nav-link" : "nav-link"} onClick={() => setMenu(true)}>{title}</Link>
             </ListGroup.Item>
           ))}
-        </ListGroup>
-      </Container>
+        </Container>
+      </ListGroup>
+
     </nav>
   )
 }

@@ -81,3 +81,12 @@ export default [
         ]
     }
 ]
+
+export const logos = [
+    {
+        link: "images/footer/react-logo.svg"
+    },
+    {
+        link: "images/footer/bootstrap-logo.svg"
+    }
+]

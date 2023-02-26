@@ -38,6 +38,35 @@
         }
     }
 
+    .footer-bottom{
+        padding-top: 16px;
+        text-align: center;
+        color : rgb(123, 137, 168);
+        font-size: 12px;
+
+        .made-with{
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            font-weight: 700;
+            column-gap: 12px;
+
+            .logos{
+                display: flex;
+                align-items: center;
+                column-gap: 5px;
+            }
+        }
+
+        .copyright{
+
+            margin-top: 8px;
+
+            a{
+                font-weight: 500;
+                color: rgb(178, 187, 207);
+            }
+        }
+    }
 
 }
 

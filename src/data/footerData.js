@@ -23,10 +23,6 @@ export default [
             {
                 name: "Resume",
                 link: "/resume"
-            },
-            {
-                name: "Certificates",
-                link: "/"
             }
         ]
     },

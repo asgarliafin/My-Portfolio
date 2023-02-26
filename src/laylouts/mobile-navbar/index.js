@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Container, Image, ListGroup } from 'react-bootstrap';
+import { Button, Container, Image, ListGroup, Row } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { VscChromeClose } from 'react-icons/vsc';
@@ -33,17 +33,16 @@ const MobileNavbar = () => {
           </div>
         </div>
       </Container>
-
-      <ListGroup className={`navbar-nav d-flex flex-column menu ${!menu ? "active" : null}`}>
-        <Container className='d-flex flex-column'>
+      <Container className={`menu-container ${!menu ? "active" : null}`}>
+        <ListGroup className={`navbar-nav d-flex flex-column menu`}>
           {routesData.map(({ path, title }) => (
             <ListGroup.Item key={title}>
               <Link to={path} className={pathname === path ? "active nav-link" : "nav-link"} onClick={() => setMenu(true)}>{title}</Link>
             </ListGroup.Item>
           ))}
-        </Container>
-      </ListGroup>
+        </ListGroup>
 
+      </Container>
     </nav>
   )
 }

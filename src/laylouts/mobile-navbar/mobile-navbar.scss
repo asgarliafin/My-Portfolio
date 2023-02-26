@@ -1,10 +1,10 @@
 @import "mobile-navbar-variables";
 
 #mobile-navbar {
-    padding: 20px;
+    padding: $mobile-navbar-padding;
     position: relative;
     display: none;
-    padding-bottom: $mobile-navbar-paddingBottom;
+
 
     .navbar-brand {
 
@@ -50,31 +50,29 @@
         }
     }
 
-    .menu {
+    .menu-container {
         position: absolute;
         left: $mobile-navbar-menu-left;
+        width: $mobile-navbar-menu-width;
+        opacity: $mobile-navbar-menu-opacity;
+        background: $mobile-navbar-menu-background;
         padding-top: $mobile-navbar-menu-paddingTop;
         background: $mobile-navbar-menu-background;
-        width: $mobile-navbar-menu-width;
         height: $mobile-navbar-menu-height;
         z-index: $mobile-navbar-menu-zIndex;
         opacity: $mobile-navbar-menu-opacity;
         transition: $mobile-navbar-menu-transition;
-        padding-left: 20px;
-        padding-right: 20px;
-
- 
 
         &.active {
             width: 100%;
             opacity: $mobile-navbar-menu-active-opacity;
             background: $mobile-navbar-menu-hover-background;
         }
+    }
 
-        .container{
-            row-gap: $mobile-navbar-menu-gap;
-        }
-
+    .menu {
+        row-gap: $mobile-navbar-menu-gap;
+        padding-inline: $mobile-navbar-menu-paddingInline;
 
         .list-group-item {
             padding-bottom: $mobile-navbar-menu-list-group-item-paddingBottom;

@@ -7,7 +7,9 @@ import './footer.scss';
 
 
 const Footer = () => {
-  console.log(logos);
+
+  const repoLink = "https://github.com/asgarliafin/My-Portfolio";
+
   return (
     <footer id='footer'>
       <Container>
@@ -22,7 +24,9 @@ const Footer = () => {
                       links.map(({ name, link, icon }) => {
                         const Icon = icon && icon;
                         return (<ListGroup.Item key={name}>
-                          <Link className='d-flex align-items-center' to={link}>{icon && <Icon color={"#808cac"} size={"1.25rem"} />}{name}</Link>
+                          <Link className='d-flex align-items-center' to={link}>
+                            {icon && <Icon color={"#808cac"} size={"1.25rem"} />}{name}
+                          </Link>
                         </ListGroup.Item>)
                       }
                       )
@@ -47,7 +51,7 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
-        <Link to={"https://github.com/asgarliafin/My-Portfolio"} className='source-code d-flex justify-content-between align-items-center'>
+        <Link to={repoLink} className='source-code d-flex justify-content-between align-items-center'>
           <FiGithub size={"1.25rem"} />  View Source Code
         </Link>
       </Container>

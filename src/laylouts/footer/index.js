@@ -11,7 +11,7 @@ const Footer = () => {
     <footer id='footer'>
       <Container className="footer-top">
         <Row className='justify-content-center'>
-          <Col lg={9} style={{ backgroundColor: "aqua" }}>
+          <Col lg={9}>
             <Row>
               {footerData.map(({ title, links }) => (
                 <Col lg={4} xs={6} md={6}  key={title}>

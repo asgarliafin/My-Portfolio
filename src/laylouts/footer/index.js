@@ -15,7 +15,7 @@ const Footer = () => {
       <Container>
         <Row className='justify-content-center footer-top'>
           <Col lg={9}>
-            <Row className='ftr-gap justify-content-between'>
+            <Row className='footer-links justify-content-between'>
               {footerData.map(({ title, links }) => (
                 <Col lg={3} xs={6} md={6} key={title} className="d-flex flex-column">
                   <h4>{title}</h4>
@@ -40,7 +40,7 @@ const Footer = () => {
         <Row className='justify-content-center footer-bottom'>
           <Col lg={9} className='d-flex flex-column'>
             <div className="made-with d-flex justify-content-center align-items-center">Made With
-              <div className="logos">
+              <div className="logos d-flex align-items-center">
                 {logos.map(({ link }) => (
                   <span><Image src={link} width={"26"} /></span>
                 ))}

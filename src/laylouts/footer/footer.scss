@@ -91,8 +91,11 @@
 
 @media (max-width: 767.98px) {
 
-    #footer.active {
-        display: none !important;
+    #footer {
+        &.active {
+            display: none !important;
+
+        }
 
 
         .ftr-gap>div {

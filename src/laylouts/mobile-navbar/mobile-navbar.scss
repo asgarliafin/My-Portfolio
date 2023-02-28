@@ -58,7 +58,7 @@
         background: $mobile-navbar-menu-background;
         padding-top: $mobile-navbar-menu-paddingTop;
         background: $mobile-navbar-menu-background;
-        height: 100vh;
+        // height: 100vh;
         z-index: $mobile-navbar-menu-zIndex;
         opacity: $mobile-navbar-menu-opacity;
         transition: $mobile-navbar-menu-transition;
@@ -67,7 +67,7 @@
             width: 100%;
             opacity: $mobile-navbar-menu-active-opacity;
             background: $mobile-navbar-menu-hover-background;
-            height: $mobile-navbar-menu-active-height;
+            // height: $mobile-navbar-menu-active-height;
         }
     }
 

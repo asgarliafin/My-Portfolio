@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Container, Row, Col, ListGroup, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import footerData, { logos } from 'data/footerData.js';
 import { FiGithub } from 'react-icons/fi';
+import context from 'context';
 import './footer.scss';
 
 
@@ -10,8 +11,11 @@ const Footer = () => {
 
   const repoLink = "https://github.com/asgarliafin/My-Portfolio";
 
+  const {menu} = useContext(context);
+
+  console.log(menu)
   return (
-    <footer id='footer'>
+    <footer id='footer' className={!menu ?'active' : null}>
       <Container>
         <Row className='justify-content-center footer-top'>
           <Col lg={8}>
@@ -41,8 +45,8 @@ const Footer = () => {
           <Col lg={9} className='d-flex flex-column'>
             <div className="made-with d-flex justify-content-center align-items-center">Made With
               <div className="logos d-flex align-items-center">
-                {logos.map(({ link }) => (
-                  <span><Image src={link} width={"26"} /></span>
+                {logos.map(({ link },i) => (
+                  <span key={i}><Image src={link} width={"26"} /></span>
                 ))}
               </div>
             </div>

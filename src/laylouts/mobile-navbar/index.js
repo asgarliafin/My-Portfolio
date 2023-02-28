@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Button, Container, Image, ListGroup, Row } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { VscChromeClose } from 'react-icons/vsc';
 import routesData from 'data/routesData';
+import context from 'context';
 import './mobile-navbar.scss';
+
 
 const MobileNavbar = () => {
 
@@ -12,7 +14,8 @@ const MobileNavbar = () => {
 
   const name = "Afin Asgarli";
 
-  const [menu, setMenu] = useState(true);
+  const {menu, setMenu} = useContext(context);
+
 
   return (
     <nav id='mobile-navbar'>

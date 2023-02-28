@@ -5,6 +5,7 @@
     margin: $footer-margin;
     border-top: $footer-borderBottom;
 
+
     .container {
         position: relative;
     }
@@ -89,15 +90,22 @@
 
 
 @media (max-width: 767.98px) {
-    .ftr-gap>div {
-        row-gap: $footer-Col9-rowGap-sm !important;
-    }
 
-    .source-code {
-        margin-top: $source-code-marginTop;
-        position: relative !important;
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
+    #footer.active {
+        display: none !important;
+
+
+        .ftr-gap>div {
+            row-gap: $footer-Col9-rowGap-sm !important;
+        }
+
+        .source-code {
+            margin-top: $source-code-marginTop;
+            position: relative !important;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
     }
 }

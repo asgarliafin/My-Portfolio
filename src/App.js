@@ -6,7 +6,7 @@ import 'assets/scss/style.scss';
 function App() {
   return (
     <div className="app">
-      <Navbar />
+      <Navbar  />
       <MobileNavbar/>
       <Main>
         <Router />

@@ -8,7 +8,7 @@ const CTA = () => {
     <div id='cta'>
       <Container className='d-flex flex-column align-items-center'>
         <Image src={'images/stikers/banner/lineBreak.svg'}/>
-        <div className='wrapper'>
+        <div className='cta-content d-flex flex-column align-items-center'>
           <h2 className='title'>Interested in Working Together?</h2>
           <Link to={"mailto:afinasgarli0@gmail.com"} className="link">Get in Touch</Link>
         </div>

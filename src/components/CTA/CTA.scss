@@ -43,17 +43,24 @@
 
 
 @media (max-width: 575.98px) {
+
+    #cta{
+        padding-top: 100px !important;
+    }
     .line{
-        bottom: -70px !important;
+        bottom: -55px !important;
     }
     .wrapper{
         padding-bottom: 75px !important;
     }
     .title{
         text-align: center;
-        font-size: 28px;
-        line-height: 1.2;
-        margin-bottom: 25px !important;
+        font-size: 28px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 35px !important;
+    }
+    .link{
+        font-size: 16px !important;
     }
 }
 

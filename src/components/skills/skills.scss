@@ -1,0 +1,16 @@
+@import 'skills-variables';
+
+#skills{
+    margin-top: $skilss-marginTop;
+
+    h2{
+        font-size: 30px;
+    }
+    .skills-row{
+        gap: 12px;
+
+        .title{
+            font-size: 12px;
+        }
+    }
+}

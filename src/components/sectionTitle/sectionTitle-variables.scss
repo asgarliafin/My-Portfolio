@@ -1,0 +1,30 @@
+// Section Title Variables 
+
+$display-lg : grid;
+$display-md : flex;
+$flex-direction-md : column-reverse;
+$align-items-md : center;
+$grid-template-columns-lg: auto 1fr;
+$column-gap-lg: 30px;
+
+// Section Title h2 variables
+$h2-marginBottom : 40px;
+$h2-fontSize-lg : 30px;
+$h2-fontSize-md : 25px;
+$h2-lineHeight : 36px;
+$h2-position : relative;
+$h2-textAlign : center;
+
+
+// Line variables
+$line-width-lg : 100%;
+$line-width-md : 150px;
+$line-position : relative;
+$line-height : 4px;
+$line-background : #00c7ff;
+$line-lineHeight : 36px;
+$line-border : none;
+$line-top-lg : 22%;
+$line-top-md : 0;
+$line-bottom-md : 0;
+$line-marginBottom-md : 15px;

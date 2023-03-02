@@ -1,45 +1,45 @@
 @import 'sectionTitle-variables';
 
-#sectionTitle{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 30px;
 
-    h2{
-        margin-bottom: 40px;
-        font-size: 30px;
-        line-height: 36px;
-        position: relative;
+#sectionTitle {
+    display: $display-lg;
+    grid-template-columns: $grid-template-columns-lg;
+    column-gap: $column-gap-lg;
+
+    h2 {
+        margin-bottom: $h2-marginBottom;
+        font-size: $h2-fontSize-lg;
+        line-height: $h2-lineHeight;
+        position: $h2-position;
+        text-align: $h2-textAlign;
     }
 
-    .line{
-        height: 4px;
-        width: 100%;
-        position: relative;
-        top: 22%;
-        background-color: #00c7ff;
-        border: none;
-        line-height: 36px;
-    }
-}
-
-@media  (max-width: 991.98px){
-    #sectionTitle{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-
-        .line{
-            width: 150px !important;
-            position: relative;
-            top: 0 !important;
-            bottom: 0 !important;       
-            margin-bottom: 15px !important;
-        }
-        h2{
-            text-align: center;
-            font-size: 25px !important;
-        }
+    .line {
+        height: $line-height;
+        width: $line-width-lg;
+        position: $line-position;
+        top: $line-top-lg;
+        background-color: $line-background;
+        border: $line-border;
+        line-height: $line-lineHeight;
     }
 }
- 
+
+@media (max-width: 991.98px) {
+    #sectionTitle {
+        display: $display-md;
+        flex-direction: $flex-direction-md;
+        align-items: $align-items-md;
+
+        .line {
+            width: $line-width-md !important;
+            top: $line-top-md !important;
+            bottom: $line-bottom-md !important;
+            margin-bottom: $line-marginBottom-md !important;
+        }
+
+        h2 {
+            font-size: $h2-fontSize-md !important;
+        }
+    }
+}

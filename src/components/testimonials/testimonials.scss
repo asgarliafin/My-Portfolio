@@ -4,18 +4,18 @@
     margin-top: $testimonialsmarginTop;
 
     .testimonials-row {
-        column-gap: 20px;
-        flex-wrap: nowrap;
+        column-gap: $columnGap-lg;
+        flex-wrap: $flexWrap-lg;
     }
 
     .testimonials-card {
-        background: #000f2e;
-        padding: 20px;
-        border: 1px solid #009ac5;
-        border-radius: 8px;
-        max-height: 200px;
-        height: 100%;
-        position: relative;
+        background: $background;
+        padding: $padding;
+        border: $border;
+        border-radius: $borderRadius;
+        max-height: $max-height;
+        height: $height;
+        position: $position;
 
         .yay {
             position: absolute;

@@ -1,0 +1,45 @@
+@import 'sectionTitle-variables';
+
+#sectionTitle{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 30px;
+
+    h2{
+        margin-bottom: 40px;
+        font-size: 30px;
+        line-height: 36px;
+        position: relative;
+    }
+
+    .line{
+        height: 4px;
+        width: 100%;
+        position: relative;
+        top: 22%;
+        background-color: #00c7ff;
+        border: none;
+        line-height: 36px;
+    }
+}
+
+@media  (max-width: 991.98px){
+    #sectionTitle{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .line{
+            width: 150px !important;
+            position: relative;
+            top: 0 !important;
+            bottom: 0 !important;       
+            margin-bottom: 15px !important;
+        }
+        h2{
+            text-align: center;
+            font-size: 25px !important;
+        }
+    }
+}
+ 

@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div id='projects'>
       <Container>
-      <SectionTitle />
+      <SectionTitle >Here are a few of my favorite projects.</SectionTitle>
         {ProjectsData.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}

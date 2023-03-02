@@ -15,12 +15,24 @@
         border-radius: 8px;
         max-height: 200px;
         height: 100%;
+        position: relative;
 
 
         .quote {
             line-height: 24px;
             font-style: italic;
             font-size: 16px;
+            
+            &::before{
+                content: "“";
+                position: absolute;
+                top: 10px;
+                left: -25px;
+                opacity: .75;
+                font-size: 80px;
+                color: #00c7ff;
+                font-style: italic;
+            }
         }
 
         .info {
@@ -45,10 +57,16 @@
 @media  (max-width: 1199.98px){
     .testimonials-row{
         flex-wrap: wrap !important;
-        row-gap: 35px !important;
+        row-gap: 40px !important;
         justify-content: center !important;
     } 
     .quote{
         font-size: 15px !important;
+
+        &::before{
+            font-size: 75px !important;
+            top: 7px !important;
+            left: -23px !important;
+        }
     }
 }

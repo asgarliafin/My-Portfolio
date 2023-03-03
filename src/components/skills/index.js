@@ -8,17 +8,23 @@ const Skills = () => {
     <div id='skills'>
       <Container>
         <Row className="justify-content-between">
-          <Col lg={6} style={{background : "darkred"}}>
-            <h2>I got the experience. <br /> Here is my toolbelt for success.</h2>
+          <Col lg={6} className={'left'}>
+            <div className='left-wr'>
+              <h2>I got the experience. <br /> Here is my toolbelt for success.    </h2>
+              <Image src={'images/stikers/skills/laptop.svg'} className='laptop' />
+              <Image src={'images/stikers/skills/coding.svg'} className='coding' />
+              <Image src={'images/stikers/skills/fillStar.svg'} className='fillStart' />
+              <Image src={'images/stikers/skills/youtube.svg'} className='youtube'/>
+            </div>
           </Col>
-          <Col lg={6} style={{background : "blue"}}>
+          <Col lg={6} className={'right'}>
             <Row className='skills-row'>
-            {SkillsData.map(({title, icon}) =>(
-              <Col lg={2} className="skill-item" title={title}>
-                <Image src={icon} className="icon" width={"40"}/>
-                <span className='title'>{title}</span>
-              </Col>
-            ))}
+              {SkillsData.map(({ title, icon }) => (
+                <Col lg={2} xs={4} sm={4} md={4} className="skill-item" title={title}>
+                  <Image src={icon} className="icon" />
+                  <span className='title'>{title}</span>
+                </Col>
+              ))}
             </Row>
           </Col>
         </Row>

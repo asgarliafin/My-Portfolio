@@ -7,12 +7,12 @@ const CTA = () => {
   return (
     <div id='cta'>
       <Container className='d-flex flex-column align-items-center'>
-        <Image src={'images/stikers/banner/lineBreak.svg'}/>
+        <Image src={'images/stickers/banner/lineBreak.svg'}/>
         <div className='cta-content d-flex flex-column align-items-center'>
           <h2 className='title'>Interested in Working Together?</h2>
           <Link to={"mailto:afinasgarli0@gmail.com"} className="link">Get in Touch</Link>
         </div>
-        <Image src={'images/stikers/hero/fancyLines.svg'}className='line' />
+        <Image src={'images/stickers/hero/fancyLines.svg'}className='line' />
       </Container>
     </div>
   )

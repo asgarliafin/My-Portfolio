@@ -16,12 +16,12 @@ const Testimonials = () => {
                             {TestimonialsData.map(({ quote, name, job }, i) => (
                                 <Col lg={4} xs={10} sm={10} md={4}>
                                     <div className="testimonials-card d-flex flex-column justify-content-between">
-                                        {i === 0 && <Image src={"/images/stikers/testimonials/yay.svg"} className='yay' />}
+                                        {i === 0 && <Image src={"/images/stickers/testimonials/yay.svg"} className='yay' />}
                                         <p className='quote'>"{quote}"</p>
                                         <p className='info'>
                                             <b className='name'>{name}</b> - <span className='job'>{job}</span>
                                         </p>
-                                        {i == 2 && <Image src="/images/stikers/testimonials/squiggle2.svg" className='squiggle2'/>}
+                                        {i == 2 && <Image src="/images/stickers/testimonials/squiggle2.svg" className='squiggle2'/>}
                                     </div>
                                 </Col>
                             ))}

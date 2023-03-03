@@ -11,10 +11,10 @@ const Skills = () => {
           <Col lg={6} md={12} className={'left'}>
             <div className='left-wr'>
               <h2>I got the experience. <br /> Here is my toolbelt for success.    </h2>
-              <Image src={'images/stikers/skills/laptop.svg'} className='laptop' />
-              <Image src={'images/stikers/skills/coding.svg'} className='coding' />
-              <Image src={'images/stikers/skills/fillStar.svg'} className='fillStart' />
-              <Image src={'images/stikers/skills/youtube.svg'} className='youtube'/>
+              <Image src={'images/stickers/skills/laptop.svg'} className='laptop' />
+              <Image src={'images/stickers/skills/coding.svg'} className='coding' />
+              <Image src={'images/stickers/skills/fillStar.svg'} className='fillStart' />
+              <Image src={'images/stickers/skills/youtube.svg'} className='youtube'/>
             </div>
           </Col>
           <Col lg={6} className={'right'}>

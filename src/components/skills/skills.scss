@@ -73,24 +73,36 @@
 }
 
 @media screen and (max-width: 991.98px) {
+    .wr{
+        position: relative;
+    }
     .left {
         margin-bottom: 50px;
 
         .left-wr {
             max-width: none !important;
             text-align: center;
+            position: static !important;
+
+            h2{
+                font-size: 25px !important;
+            }
         
-            
+
         .laptop {
-            left: -30px;
-            bottom: -50px;
+            left: -10% !important;
+            top: 55px;
+            // bottom: -50px;
             z-index: -1;
         }
 
         .coding {
-            right: 5px;
-            top: 105px;
+            left:  17% !important;
+            right:  auto !important;
+            top: auto !important;
+            bottom: 200px !important;
             z-index: -1;
+            
         }
 
         .fillStart {
@@ -101,11 +113,17 @@
 
         .youtube {
             top: auto !important;
-            bottom: 0 !important;
+            bottom: -45px !important;
             right: 50px;
+            z-index: -1;
         }
 
         }
 
+    }
+    .right{
+       .skills-row{
+             row-gap: 36px !important;   
+        }
     }
 }

@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <div id='skills'>
       <Container>
-        <Row className="justify-content-between">
+        <Row className="justify-content-between wr">
           <Col lg={6} md={12} className={'left'}>
             <div className='left-wr'>
               <h2>I got the experience. <br /> Here is my toolbelt for success.    </h2>

@@ -8,7 +8,7 @@ const Skills = () => {
     <div id='skills'>
       <Container>
         <Row className="justify-content-between">
-          <Col lg={6} className={'left'}>
+          <Col lg={6} md={12} className={'left'}>
             <div className='left-wr'>
               <h2>I got the experience. <br /> Here is my toolbelt for success.    </h2>
               <Image src={'images/stikers/skills/laptop.svg'} className='laptop' />
@@ -20,7 +20,7 @@ const Skills = () => {
           <Col lg={6} className={'right'}>
             <Row className='skills-row'>
               {SkillsData.map(({ title, icon }) => (
-                <Col lg={2} xs={4} sm={4} md={4} className="skill-item" title={title}>
+                <Col lg={2} xs={4} sm={3} md={2} className="skill-item" title={title}>
                   <Image src={icon} className="icon" />
                   <span className='title'>{title}</span>
                 </Col>

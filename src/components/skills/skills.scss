@@ -5,7 +5,7 @@
 
     .left {
 
-        .left-wr{
+        .left-wr {
             position: relative;
             min-height: 100%;
             max-width: fit-content;
@@ -16,23 +16,25 @@
             line-height: 36px;
         }
 
-        .laptop{
+        .laptop {
             position: absolute;
             left: -30px;
             bottom: -50px;
         }
-        .coding{
+
+        .coding {
             position: absolute;
             right: 5px;
             top: 105px;
         }
 
-        .fillStart{
+        .fillStart {
             position: absolute;
             top: -15px;
             right: -15px;
         }
-        .youtube{
+
+        .youtube {
             position: absolute;
             top: 170px;
             right: 50px;
@@ -67,5 +69,43 @@
 
             }
         }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .left {
+        margin-bottom: 50px;
+
+        .left-wr {
+            max-width: none !important;
+            text-align: center;
+        
+            
+        .laptop {
+            left: -30px;
+            bottom: -50px;
+            z-index: -1;
+        }
+
+        .coding {
+            right: 5px;
+            top: 105px;
+            z-index: -1;
+        }
+
+        .fillStart {
+            top: -15px;
+            right: -15px;
+            z-index: -1;
+        }
+
+        .youtube {
+            top: auto !important;
+            bottom: 0 !important;
+            right: 50px;
+        }
+
+        }
+
     }
 }

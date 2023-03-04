@@ -1,9 +1,8 @@
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter} from 'react-router-dom'
 import App from 'App';
-import context from 'context';
 import Provider from 'context/Provider';
 import 'assets/lib/bootstrap.min.css';
 import 'assets/scss/common.scss';
@@ -12,7 +11,7 @@ import 'assets/scss/common.scss';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter >
       <Provider>
         <App/>
       </Provider>

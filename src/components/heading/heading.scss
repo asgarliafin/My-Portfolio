@@ -1,15 +1,41 @@
-#heading{
+#heading {
     padding-block-start: 36px;
-    padding-block-end: 80px;
+    padding-block-end: 5rem;
     text-align: center;
 
-    h1{
-        margin-bottom: 32px;
-        font-size: 60px;
+    h1 {
+        margin-bottom: 2rem;
+        font-size: 3.75rem;
         font-weight: 400;
+        position: relative;
+        display: inline-block;
+        line-height: 60px;
+
+        img {
+            position: absolute;
+            top: -2rem;
+            right: -2rem;
+        }
+
     }
-    p{
-        font-size: 24px;
+
+    p {
+        font-size: 1.5rem;
         color: #7b89a8;
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 767.98px)  {
+    #heading {
+        padding-bottom: 3rem !important;
+
+        h1 {
+            font-size: 3.45rem !important;
+            margin-bottom: 1.5rem !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
     }
 }

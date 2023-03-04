@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Image, Row } from 'react-bootstrap';
 import './heading.scss';
 
 const Heading = () => {
@@ -8,7 +8,9 @@ const Heading = () => {
       <Container>
         <Row className={'justify-content-center'}>
           <Col lg={8}>
-            <h1>Projects</h1>
+            <h1>Projects
+              <Image src={'images/stickers/hero/code.svg'} width={"40px"}/>
+            </h1>
             <p>I've built cool apps and websites using anything from HTML to React (and even PHP!). Here are some of my favorite projects over the course of my journey.</p>
           </Col>
         </Row>

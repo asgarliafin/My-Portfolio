@@ -1,0 +1,19 @@
+#projects{
+
+    
+    .view-all{
+        display: block;
+        border: 1px solid #00c7ff;
+        padding: 12px 32px;
+        border-radius: 9999px;
+        margin-top: 40px;
+        text-align: center;
+        color : #00c7ff;
+        transition: all .15s cubic-bezier(.4,0,.2,1);
+        
+        &:hover{
+            background: rgb(0 199 255);
+            color: #FFFFFF;
+        }
+    }
+}

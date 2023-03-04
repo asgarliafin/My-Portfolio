@@ -1,0 +1,67 @@
+@import 'projectCard-variables.scss';
+
+#projectCard {
+
+    .card-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        border: 1px solid #7b89a8;
+        border-radius: 12px;
+        transition: all .3s cubic-bezier(.4, 0, .2, 1);
+        position: relative;
+
+        &:hover {
+            border-color: rgb(0 199 255);
+            opacity: .75;
+            transform: translateY(-10px);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 6px;
+        }
+    }
+
+    .card-body {
+        margin-top: 20px;
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .card-links {
+            display: flex;
+            column-gap: 8px;
+
+            a {
+
+                img {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+
+        .card-text {
+            color: #7b89a8;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .tag-list {
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+
+            .tag {
+                font-size: 14px;
+                padding: 4px 8px;
+                background: rgb(25 39 66);
+                border-radius: 8px;
+            }
+        }
+    }
+}

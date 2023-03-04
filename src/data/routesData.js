@@ -10,10 +10,4 @@ export default [
         component: <Projects />,
         path: "/projects",
         title : "Projects"
-    },
-    {
-        component: <Resume />,
-        path: "/resume",
-        title : "Resume"
-    }
-]
+    }]

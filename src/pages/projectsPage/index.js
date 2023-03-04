@@ -1,7 +1,7 @@
 import { Heading, More, ProjectCard } from 'components';
 import React from 'react';
 import ProjectsData from 'data/projects.json';
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import './projectsPage.scss';
 
 
@@ -10,9 +10,11 @@ const ProjectsPage = () => {
     <div id='projectsPage'>
       <Container>
         <Heading />
-        {ProjectsData.map((project) => (
-          <ProjectCard key={project.id} {...project} />
-        ))}
+        <Row style={{rowGap : "35px"}}>
+          {ProjectsData.map((project) => (
+            <ProjectCard key={project.id} {...project} />
+          ))}
+        </Row>
         <More />
       </Container>
     </div>

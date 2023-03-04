@@ -5,7 +5,7 @@ import './projectCard.scss';
 
 const ProjectCard = ({ id, title, desc, img, link, github, tags }) => {
   return (
-    <Col id='projectCard' lg={4}>
+    <Col id='projectCard' lg={4} xs={10} sm={8} md={6}>
       <Link to={link} className="card-heading">
         <Image src={img} />
       </Link>

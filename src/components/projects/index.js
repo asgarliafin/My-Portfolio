@@ -9,11 +9,11 @@ const Projects = () => {
     <div id='projects'>
       <Container>
       <SectionTitle >Here are a few of my favorite projects.</SectionTitle>
-        <Row>
+        <Row className={'justify-content-center projects-row'}>
         {ProjectsData.slice(0,3).map((project, i) => <ProjectCard key={project.id} {...project} />)}
         </Row>
         <Row className='justify-content-center'>
-          <Col lg={8}>
+          <Col lg={8} sm={8} xs={10} md={8}>
             <Link to={'/projects'} className={'view-all'}>View All</Link>
           </Col>
         </Row>

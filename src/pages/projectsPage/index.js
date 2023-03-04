@@ -10,7 +10,7 @@ const ProjectsPage = () => {
     <div id='projectsPage'>
       <Container>
         <Heading />
-        <Row style={{rowGap : "35px"}}>
+        <Row style={{rowGap : "35px"}} className={'justify-content-center'}>
           {ProjectsData.map((project) => (
             <ProjectCard key={project.id} {...project} />
           ))}

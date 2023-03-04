@@ -51,3 +51,17 @@
         display: none;
     }
 }
+
+@media (max-width: 991.98px){
+    #navbar .navbar-brand {
+
+        img:hover{
+            scale: none;
+            transform: none;
+        }
+        .letter:hover{
+            color: #FFFFFF !important;
+            margin-top: 0 !important;    
+        }
+    }
+}

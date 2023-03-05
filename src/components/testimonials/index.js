@@ -1,8 +1,8 @@
 import React from 'react';
 import TestimonialsData from 'data/testimonials.json'
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import './testimonials.scss';
 import SectionTitle from 'components/sectionTitle';
+import './testimonials.scss';
 
 const Testimonials = () => {
     return (
@@ -14,7 +14,7 @@ const Testimonials = () => {
                         <Row className='testimonials-row'>
 
                             {TestimonialsData.map(({ quote, name, job }, i) => (
-                                <Col lg={4} xs={10} sm={10} md={4}>
+                                <Col lg={4} xs={10} sm={10} md={4} key={i}>
                                     <div className="testimonials-card d-flex flex-column justify-content-between">
                                         {i === 0 && <Image src={"/images/stickers/testimonials/yay.svg"} className='yay' />}
                                         <p className='quote'>"{quote}"</p>

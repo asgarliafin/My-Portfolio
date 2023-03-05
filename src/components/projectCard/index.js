@@ -26,8 +26,8 @@ const ProjectCard = ({ id, title, desc, img, link, github, tags }) => {
           {desc}
         </p>
         <ul className="tag-list d-flex align-items-center">
-          {tags.map(tag => (
-            <li className='tag'>{tag}</li>
+          {tags.map((tag, i) => (
+            <li className='tag' key={i}>{tag}</li>
           ))}
         </ul>
       </div>

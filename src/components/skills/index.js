@@ -19,8 +19,8 @@ const Skills = () => {
           </Col>
           <Col lg={6} className={'right'}>
             <Row className='skills-row'>
-              {SkillsData.map(({ title, icon }) => (
-                <Col lg={2} xs={4} sm={3} md={2} className="skill-item" title={title}>
+              {SkillsData.map(({ title, icon },i) => (
+                <Col lg={2} xs={4} sm={3} md={2} className="skill-item" title={title} key={i}>
                   <Image src={icon} className="icon" />
                   <span className='title'>{title}</span>
                 </Col>

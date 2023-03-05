@@ -82,3 +82,5 @@ export const logos = [
         link: "images/footer/bootstrap-logo.svg"
     }
 ]
+
+export const repoLink = "https://github.com/asgarliafin/My-Portfolio";

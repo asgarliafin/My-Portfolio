@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import { Container, Row, Col, ListGroup, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import footerData, { logos } from 'data/footerData.js';
+import footerData, { logos, repoLink } from 'data/footerData.js';
 import { FiGithub } from 'react-icons/fi';
 import context from 'context';
 import './footer.scss';
@@ -9,11 +9,8 @@ import './footer.scss';
 
 const Footer = () => {
 
-  const repoLink = "https://github.com/asgarliafin/My-Portfolio";
-
   const {menu} = useContext(context);
 
-  console.log(menu)
   return (
     <footer id='footer' className={!menu ?'active' : null}>
       <Container>

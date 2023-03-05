@@ -1,14 +1,15 @@
 import React from 'react';
-import {  Projects, Skills, Testimonials, CTA } from 'components';
+import { Projects, Skills, Testimonials, CTA, Hero } from 'components';
 import './home.scss';
 
 const Home = () => {
   return (
     <div id='home'>
-      <Projects/>
-      <Skills/>
-      <Testimonials/>
-      <CTA/>
+      <Hero />
+      <Projects />
+      <Skills />
+      <Testimonials />
+      <CTA />
     </div>
   )
 }

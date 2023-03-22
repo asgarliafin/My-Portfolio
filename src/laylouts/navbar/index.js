@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav id='navbar'>
       <Container className="d-flex justify-content-between align-items-center">
         <Link to={""} className="navbar-brand d-flex align-items-center">
-          <Image src={"images/logos/download.png"} width={"60"} />
+          <Image src={"images/logos/download.png"} width={"40"} />
           <div className='name d-flex'>
             {name.split(" ").map((word, i) => <span className='word d-flex' key={i}>{word.split("")
               .map((letter, u) => <b className='letter' key={u}>{letter}</b>)}</span>)}

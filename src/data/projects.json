@@ -1,39 +1,39 @@
 [
     {
         "id": 0,
-        "title": "Learn.TheYEI",
-        "desc": "All the resources you will need to get a boost into economics.",
-        "img": "/images/projects/yei-learn.png",
-        "link": "https://learn.theyei.org/",
-        "github": "https://github.com/braydentw/learn.theyei",
+        "title": "The Arthouse",
+        "desc": "All the resources you need to watch movies.",
+        "img" : "/images/projects/arthouse.png",
+        "link": "https://arthouse.vercel.app",
+        "github": "https://github.com/asgarliafin/Arthouse",
         "tags": [
             "React",
-            "NextJS",
-            "TailwindCSS",
-            "CSS",
-            "Firebase"
+            "SCSS",
+            "JSON",
+            "VITE"
         ]
     },
     {
         "id": 1,
-        "title": "BuildFaster",
-        "desc": "Beautiful HTML templates ready-made for your next landing page.",
-        "img": "/images/projects/buildfaster.png",
-        "link": "https://buildfaster.co/",
+        "title": "Nike",
+        "desc": "You can find Nike boozers in my Nike store, you know.",
+        "img": "/images/projects/nike.png",
+        "link": "https://nike11.vercel.app/",
+        "github" : "https://github.com/asgarliafin/Nike",
         "tags": [
-            "HTML",
+            "React",
             "CSS",
-            "Javascript",
-            "Gumroad"
+            "JSON",
+            "NPM"
         ]
     },
     {
         "id": 2,
-        "title": "React Emoji Search",
-        "desc": "1800+ emojis at your fingertips. Ready-to-use with just a simple copy+paste.",
-        "img": "/images/projects/react-emoji-search.png",
-        "link": "https://react-emoji-search.braydentw.vercel.app/",
-        "github": "https://github.com/braydentw/react-emoji-search",
+        "title": "Planet store",
+        "desc": "Planet is an excellent store site.",
+        "img": "/images/projects/planet-store.png",
+        "link": "https://planet-store.vercel.app",
+        "github": "https://github.com/asgarliafin/Planet-Store",
         "tags": [
             "React",
             "CSS",
@@ -42,10 +42,11 @@
     },
     {
         "id": 3,
-        "title": "BitcoinTemp",
-        "desc": "A fun way to check the price of bitcoin! Cloudy days, sunny days, and Bitcoin Storms!",
-        "img": "/images/projects/bitcointemp.png",
-        "link": "https://bitcointemp.com",
+        "title": "Gloreya",
+        "desc": "Gloreya - Food Ordering & Delivery Restaurant",
+        "img": "/images/projects/orders.png",
+        "link": "https://gloreya.vercel.app",
+        "github" : "https://github.com/asgarliafin/Task",
         "tags": [
             "React",
             "NextJS",
@@ -55,51 +56,53 @@
     },
     {
         "id": 4,
-        "title": "Create HTML Boilerplate",
+        "title": "Easy",
         "desc": "Generate a vanilla HTML boilerplate in a flash!",
-        "img": "/images/projects/create-html-boilerplate.png",
-        "github": "https://github.com/BraydenTW/create-html-boilerplate",
+        "img": "/images/projects/easy.png",
+        "link" : "https://github.com/asgarliafin/Easy.git",
+        "github": "https://github.com/asgarliafin/Easy",
         "tags": [
-            "Node",
+            "HTML",
             "Javascript",
-            "NPM",
-            "HTML"
+            "CSS"
         ]
     },
     {
         "id": 5,
-        "title": "8 Ball in your CLI",
-        "desc": "An 8 ball simulation in your CLI built with Rust!",
-        "img": "/images/projects/8ball-rust.png",
-        "github": "https://github.com/BraydenTW/8ball-rust",
+        "title": "DigiSell",
+        "desc": "You know DigiSell will have a good time too",
+        "img": "/images/projects/digisell.png",
+        "link" : "https://digisell.vercel.app/",
+        "github": "https://github.com/asgarliafin/DigiSell",
         "tags": [
-            "Rust",
-            "CLI",
-            "Game"
+            "React",
+            "CSS",
+            "VITE"
         ]
     },
     {
         "id": 6,
-        "title": "DontLeaveMe 😭",
-        "desc": "Beg for users to stay on your website.",
-        "img": "/images/projects/dontleaveme.png",
-        "link": "https://github.com/BraydenTW/dontleaveme/",
+        "title": "Gallery 😭",
+        "desc": "You can find beautiful pictures in the gallery, you know!",
+        "img": "/images/projects/gallery.png",
+        "link": "https://gallery-three-omega.vercel.app/",
+        "github" : "https://github.com/asgarliafin/Gallery",
         "tags": [
-            "Javascript",
-            "NPM"
+            "React",
+            "CSS"
         ]
     },
     {
         "id": 7,
-        "title": "Madlibs",
-        "desc": "A simple version of Madlibs built for the web!",
-        "img": "/images/projects/madlibs.png",
-        "link": "https://fillemin.netlify.app/",
-        "github": "https://github.com/braydentw/madlibs",
+        "title": "Gozzby",
+        "desc": "Gozzby is perfect!",
+        "img": "/images/projects/gozzby.png",
+        "link": "https://gozzby.vercel.app/",
+        "github": "https://github.com/asgarliafin/Gozzby",
         "tags": [
-            "HTML",
+            "React",
             "CSS",
-            "Javascript"
+            "NPM"
         ]
     }
 ]

@@ -90,3 +90,13 @@ button{
         font-size: large;
     }
 }
+
+.link{
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover{
+        border: 2px solid rgb(0, 199, 255) !important;
+        background: rgb(0, 199, 255) !important;
+        color: #FFFFFF;    
+    }
+}

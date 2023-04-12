@@ -1,4 +1,3 @@
-
 import { FiGithub } from 'react-icons/fi';
 import { SlSocialLinkedin } from 'react-icons/sl';
 import { SiHackerrank, SiUpwork } from 'react-icons/si';
